@@ -12,13 +12,13 @@
             }
         ?>
 
-        <ul class="">
+        <ul>
             <?php
                 foreach ($MENU as $key=>$item) {
 
                     if (count($CHILDS = $item['CHILDS'])>0) {
                     ?>
-                    <li class="">
+                    <li>
                         <?
                         if ($item["IS_CATALOG"] == 1) {
                             ?>
@@ -42,12 +42,9 @@
                                             if($item['IS_CATALOG']==true){
                                                 foreach($CHILDS as $KEY_CHILD => $CHILD){
                                                     if(
-
                                                             $KEY_CHILD%$itemsChildCount == 0
                                                             &&
-                                                            $KEY_CHILD>0
-
-
+                                                            $KEY_CHILD > 0
                                                     ){
                                         ?>
                                     </li>
@@ -77,12 +74,24 @@
                                         <?
                                         } else {
                                         ?>
+                                        <?
+                                            $el_count = 0;
+                                            $arFilter = array('IBLOCK_ID' => $CHILD[3]["SECTION"]["IBLOCK_ID"], 
+                                                'SECTION_ID'=>$CHILD[3]["SECTION"]["ID"], 
+                                                "ACTIVE"=>"Y");
+                                            $res = CIBlockElement::GetList(false, $arFilter, array('IBLOCK_ID'));
+                                            if ($el = $res->Fetch()){
+                                                $el_count = $el["CNT"];
+                                            }
+                                            if(!empty($CHILD[3]["SECTION"]) && $el_count > 0){
+                                        ?>
                                         <ul class="catalog-list-map-last-lvl">
                                             <li>
                                                 <a href="<?=$CHILD[1]?>"><?=$CHILD[0]?></a>
                                             </li>
                                         </ul>
                                         <?
+                                            }
                                         }
                                     }
                                 } else {

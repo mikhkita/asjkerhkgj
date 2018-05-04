@@ -18,30 +18,34 @@ if (count($arResult['SUBSECTIONS']) > 0) {
             <div id="collapse" class="accordion-body collapse in">
 
                 <div class="category-top-menu">
-
                     <ul>
                         <?
                         foreach ($arResult['SUBSECTIONS'] as $section) {
-
-                            if ($section["ACTIVE"] == 1) {
-                                $addClass = 'class="active"';
-                            } else {
-                                $addClass = '';
+                        	$el_count = 0;
+                        	$arFilter = array('IBLOCK_ID' => $section["IBLOCK_ID"], 
+                                'SECTION_ID'=>$section["ID"], 
+                                "ACTIVE"=>"Y");
+                            $res = CIBlockElement::GetList(false, $arFilter, array('IBLOCK_ID'));
+                            if ($el = $res->Fetch()){
+                                $el_count = $el["CNT"];
                             }
-                            ?>
-                            <li <?=$addClass?>>
-                                <a href="/catalog/<?=$section["CODE"]?>/"><?=$section["NAME"]?></a>
-                            </li>
-
-                            <?
-                        }
-                        ?>
+                            if($el_count > 0){
+	                            if ($section["ACTIVE"] == 1) {
+	                                $addClass = 'class="active"';
+	                            } else {
+	                                $addClass = '';
+	                            }
+	                    ?>
+	                            <li <?=$addClass?>>
+	                                <a href="/catalog/<?=$section["CODE"]?>/"><?=$section["NAME"]?></a>
+	                            </li>
+                            <?}
+                        }?>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
     <?
 }
 ?>
