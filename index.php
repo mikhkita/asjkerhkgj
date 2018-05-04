@@ -16,7 +16,7 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 		"SORT_BY" => "ASC",
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "3600"
-	),
+	), 
 	false
 );?><?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
