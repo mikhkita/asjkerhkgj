@@ -1,0 +1,7 @@
+#bitrix legacy
+/bitrix
+/upload
+
+/*.log
+
+/*.lock

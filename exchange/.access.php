@@ -1,0 +1,3 @@
+<?
+$PERM["reciever.php"]["*"]="X";
+?>
