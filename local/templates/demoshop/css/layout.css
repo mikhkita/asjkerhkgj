@@ -45,5 +45,16 @@ input.error,textarea.error{
 .color-min:hover{
 	border: 1px solid #444;
 }
-
+.col3-list .list .item {
+	margin-left: 10px;
+}
+#top_nav {
+	position: static !important;
+}
+.content {
+	clear: none !important;
+}
+.content.proba {
+	margin-top: 0px;
+}
 
