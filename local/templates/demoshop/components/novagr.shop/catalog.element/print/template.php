@@ -128,6 +128,7 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 				<div class="big-demo" id="photos">
 				<?
                     $item = current($arResult["OFFERS"]);
+                    var_dump($item);
                 ?>
 <!--                    <img src="--><?//=current($arResult['DETAIL_IMAGES'][$item['ID']]['curPhotosMiddle'])?><!--">-->
                     <img src="<?=current($curPhotosMiddle)?>">
