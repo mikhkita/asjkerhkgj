@@ -1,0 +1,65 @@
+@charset "utf-8";
+body{
+		min-width: 240px;
+	}
+.header__menu {
+	display: none;
+}
+.header.ui {
+	display: block;
+	padding-top: 20px;
+}
+.burger-menu{
+	display: inline-block;
+	content: url(../images/menu.svg);
+	height: 32px;
+	width: 32px;
+	float: right;
+	position: relative;
+    bottom: 1px;
+}
+.form-demo {
+	margin: 0px;
+	margin-top: 10px;
+	width: auto;
+}
+.clearfix:after 
+{
+visibility: hidden;
+display: block;
+content: ".";
+font-size: 0px;
+clear: both;
+height: 0;
+}
+form .column {
+	width: 100%;
+}
+.feedback__name_icon{
+	top: 13px;
+	right: 24px;
+	left: auto;
+
+}
+.feedback__mail_icon{
+	top: 70px;
+	right: 24px;
+	left: auto;
+}
+.feedback__phone_icon{
+	top: 120px;
+	right: 24px;
+	left: auto;
+}
+.col-right {
+	float: left;
+}
+.col3-list .list .item {
+	width: calc((100% / 2) - 32px);
+}
+#left {
+	width: 100%;
+}
+.content.proba {
+	width: 100%;
+}

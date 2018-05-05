@@ -14,27 +14,6 @@ $curPage = $APPLICATION -> GetCurPage();
                 </div>
             </div>
 </div></div>
-		<div id="left">
-<?php
-	if ($oneColumnFlag == true ) {
-		// hide block in detail card
-
-	} else {
-
-        if($showSectionsCatalog==true)
-        {
-            $APPLICATION->IncludeFile(SITE_DIR."include/filter/section.php");
-        } else {
-            if (strpos($curPage, SITE_DIR.'imageries') === 0 ) {
-                $APPLICATION->IncludeFile(SITE_DIR."include/filter/fashion.php");
-            }else{
-                $APPLICATION->IncludeFile(SITE_DIR."include/filter/catalog.php");
-            }
-        }
-	}	
-?>	
-		<!-- end -->
-		</div>
 		<div class="clear"></div>	
 	</div>	
 	
