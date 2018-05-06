@@ -39,7 +39,6 @@ $start = microtime(true);
     endif;
     ?>
 	<div class="clear"></div>
-
 	<div class="list">
 		<div class="line">
             <div class="item_number">

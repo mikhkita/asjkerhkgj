@@ -50,7 +50,7 @@ IncludeTemplateLangFile(__FILE__);
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <title><?$APPLICATION->ShowTitle();?></title>
     <? $APPLICATION->ShowHead();
 
     CJSCore::Init(array("jquery"));
