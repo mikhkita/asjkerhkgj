@@ -7,8 +7,12 @@ $this->setFrameMode(true);
 //CPrice
 ?>
 <?php
+
+    // 
+
     if (count($arResult['ELEMENTS'])) {
         $val = array_pop($arResult['ELEMENTS']);
+
         //add size params
         $PROPERTY_STD_SIZE = array();
         if (is_array($arParams['arOfferRequest'])) {
@@ -43,7 +47,36 @@ $this->setFrameMode(true);
                     "ID" => $val['ID']
                 )
             ); ?></a>
-        <?
+
+            <?  
+
+            /*----------Заголовок для разделов----------*/
+            
+            $res = CIBlockSection::GetByID($val["IBLOCK_SECTION_ID"]);
+            if($ar_res = $res->GetNext()){
+                $APPLICATION->SetTitle($ar_res['NAME']);
+
+            }
+
+            $rsSections = CIBlockSection::GetList(
+               array(), 
+               array(
+                  "IBLOCK_ID" => 19,
+               ), 
+               false, 
+               array("ID", "DEPTH_LEVEL", "SECTION_PAGE_URL", "UF_*")
+            );
+            while($arSection = $rsSections->Fetch())
+                if($arSection['ID'] == $val["IBLOCK_SECTION_ID"])
+                    if($arSection['UF_TITLE_H1'])
+                        $APPLICATION->SetTitle($arSection['UF_TITLE_H1']);
+
+            /*----------Заголовок для разделов(end)----------*/
+
+            // foreach ($arSection as $key) {
+            //     var_dump($key['ID']);
+            // }
+
 //                    if( !empty($val['PROPERTIES']['SPECIALOFFER']['VALUE']) )
 //                        echo'<a class="labelLink" href="'.$val['DETAIL_PAGE_URL'].'"><div class="card-spec-min"></div></a>';
 //                    if( !empty($val['PROPERTIES']['NEWPRODUCT']['VALUE']) )
@@ -135,11 +168,12 @@ $this->setFrameMode(true);
                                     'ACTIVE_COMPONENT' => 'Y',
                                     //"HIDE_ICONS"=>"Y"
                                 )
-);
+);*/
 $rsSeoData = new \Bitrix\Iblock\InheritedProperty\ElementValues($val["IBLOCK_ID"], $val['ID']);
 $arSeoData = $rsSeoData->getValues();
 
-*/?><img src='<?=strip_tags($productImage["src"]);?>' title="<?=$arSeoData['ELEMENT_PREVIEW_PICTURE_FILE_TITLE'];?>" alt="<?=$arSeoData['ELEMENT_PREVIEW_PICTURE_FILE_ALT'];?>" width="177" height="236">
+?>
+<img itemprop="image" src='<?=strip_tags($productImage["src"]);?>' title="<?=$arSeoData['ELEMENT_PREVIEW_PICTURE_FILE_TITLE'];?>" alt="<?=$arSeoData['ELEMENT_PREVIEW_PICTURE_FILE_ALT'];?>" width="177" height="236">
                 </a>
                 <?php if ($arParams['DISABLE_QUICK_VIEW'] !== 'Y'): ?>
                 <span style="cursor:pointer;<?=$style?>" class="link-popover-card catalog-preview-color-element-<?=$val['ID']?> catalog-preview-color-element-<?=$val['ID']?>-<?=$color['ID']?>">
@@ -154,7 +188,7 @@ $arSeoData = $rsSeoData->getValues();
             foreach ($CURRENT_ELEMENT_COLORS as $key => $color) {
                 $style = ($key == 0 ) ? '' : 'display:none;';
             ?>
-            <div style="<?=$style?>" class="name catalog-preview-color-element-<?=$val['ID']?> catalog-preview-color-element-<?=$val['ID']?>-<?=$color['ID']?>"><a class="detail-card" href="<?=$detailLink?>"><?=$val['NAME']?></a></div>
+            <div style="<?=$style?>" class="name catalog-preview-color-element-<?=$val['ID']?> catalog-preview-color-element-<?=$val['ID']?>-<?=$color['ID']?>"><a itemprop="name" class="detail-card" href="<?=$detailLink?>"><?=$val['NAME']?></a></div>
             <?php  
             }
         $SIZE_BY_COLOR_CSS_CLASS = array();
@@ -224,17 +258,18 @@ $arSeoData = $rsSeoData->getValues();
         if (is_array($arResult['CURRENT_ELEMENT']["COLORS"]))
         foreach ($arResult['CURRENT_ELEMENT']["COLORS"] as $key => $color) {
         $price =  $arResult['OBJECT_PRICE']->getPriceByColor($color['ID']);
+
         if (isset($price['PRINT_OLD_PRICE'])) {
             ?>
             <div style="<?=($key>0)?$style:""?>" class="price catalog-preview-color-element-<?=$val['ID']?> catalog-preview-color-element-<?=$val['ID']?>-<?=$color['ID']?>">
-                <div class="actual discount"><a href="<?= $detail ?>"><?= $price['FROM'] . $price['PRINT_PRICE']; ?></a></div>
+                <div class="actual discount"><a itemprop="price" href="<?= $detail ?>"><?= $price['FROM'] . $price['PRINT_PRICE']; ?></a></div>
                 <div class="actual old-price"><a href="<?= $detail ?>"><?= $price['FROM'] .$price['PRINT_OLD_PRICE']; ?></a></div>
             </div>
         <?php
         } else {
             ?>
             <div style="<?=($key>0)?$style:""?>" class="price catalog-preview-color-element-<?=$val['ID']?> catalog-preview-color-element-<?=$val['ID']?>-<?=$color['ID']?>">
-                <div class="actual default-value"><a href="<?= $detail ?>"><?= $price['FROM'] .$price['PRINT_PRICE']; ?></a></div>
+                <div class="actual default-value"><a itemprop="price" href="<?= $detail ?>"><?= $price['FROM'] .$price['PRINT_PRICE']; ?></a></div>
 
             </div>
         <?php

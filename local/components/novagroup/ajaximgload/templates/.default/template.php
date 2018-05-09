@@ -15,6 +15,7 @@ if($arResult !== false)
 	
 	// set attributes
 	$arParams['ATTRIBUTES']['src'] = strip_tags($arResult['src']);
+
 	foreach($arParams['ATTRIBUTES'] as $key => $val)
 		if(!empty($val))
 			$IMGTAG.= ' '.$key.'="'.$val.'"';

@@ -73,6 +73,7 @@ if (!empty($arResult['ELEMENT']["ID"])) {
         <div class="detail">
 
             <div class="head-title" style="width:310px"><h1><?=$val['NAME']?></h1></div>
+            <?$APPLICATION -> SetTitle($val['NAME']); ?>
 <!--            --><?//$APPLICATION->IncludeComponent(
 //                "novagroup:catalog.timetobuy",
 //                "",

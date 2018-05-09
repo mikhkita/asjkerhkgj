@@ -68,7 +68,7 @@ $start = microtime(true);
                     }
                     $idElem = $this->GetEditAreaId($val['ID']);
                     ?>
-                    <div class="item" id="<?=$idElem?>" data-catalog-id="<?=$val['ID']?>" data-iblock-id="<?=$arParams["CATALOG_IBLOCK_ID"]?>"><?//=$row;?>
+                    <div itemscope itemtype="http://schema.org/Product" class="item" id="<?=$idElem?>" data-catalog-id="<?=$val['ID']?>" data-iblock-id="<?=$arParams["CATALOG_IBLOCK_ID"]?>"><?//=$row;?>
                         <div class="over item-visible-content">
                             <?php
                             $SECTION = GetIBlockSection($val['IBLOCK_SECTION_ID']);
