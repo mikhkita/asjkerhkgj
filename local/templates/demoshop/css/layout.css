@@ -60,3 +60,12 @@ input.error,textarea.error{
 #accordion {
 	display: none;
 }
+.main-man {
+	display: none;
+}
+.main-woman {
+	display: none;
+}
+.mobile-but {
+	display: none;
+}

@@ -21,9 +21,6 @@ ul#menu-top {
 #accordion {
 	display: block !important;
 }
-.carusel-my02 {
-	display: none;
-}
 #footer.demo {
 	margin-top: -70px !important;
 }
@@ -129,7 +126,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	width: auto;
 }
 .col3-list .list .item {
-	width: calc((100% / 3) - 20px);
+	width: calc((100% / 3) - 15px);
 }
 .main {
 	width: 100%;
@@ -202,9 +199,9 @@ div.accordion-inner ul li a.enabled {
 .ui-widget {
 	font-size: 14px !important;
 }
- .page-container {
+/* .page-container {
  	min-height: 100vh;
- }
+ }*/
 .slider {
 	width: 100%;
 }
@@ -231,4 +228,11 @@ div.accordion-inner ul li a.enabled {
 }
 .content {
 	clear: none;
+}
+.carusel-my02 {
+	height: auto;
+}
+.carusel-my02 img{
+	height: auto;
+	width: 100%;
 }
