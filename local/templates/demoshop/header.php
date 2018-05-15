@@ -68,6 +68,7 @@ IncludeTemplateLangFile(__FILE__);
 	$APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/images.css?".$VERSION_MODULE);
 	$APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/logout.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery-ui.css?".$VERSION_MODULE);
+    $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slick.css?".$VERSION_MODULE);
 	
 	if (!isMobile())
 		$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/default_style.css?".$VERSION_MODULE);
@@ -95,6 +96,7 @@ IncludeTemplateLangFile(__FILE__);
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.validate.min.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/KitSend.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-ui.min.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slick.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
 
 /*
@@ -237,6 +239,7 @@ if ($detailCardView == 2) {
             });
         }
     </script>
+    
     <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script>
     <script src="/local/templates/demoshop/js/bootstrap-slider.js?<?=$VERSION_MODULE?>"></script>
     <script async defer
@@ -262,7 +265,9 @@ if ($detailCardView == 2) {
                 <a href="#" class="burger-menu">
 
                 </a>
+                <a href="#" class="lupa-hide" id="hider">
 
+                </a>
                 <?$APPLICATION->IncludeComponent("bitrix:menu", "header", Array(
                     "ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
                         "MENU_CACHE_TYPE" => "Y",	// Тип кеширования

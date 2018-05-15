@@ -69,3 +69,13 @@ input.error,textarea.error{
 .mobile-but {
 	display: none;
 }
+.single-slide {
+	display: none;
+}
+.main-demo {
+	text-align: left;
+}
+.logo-l {
+	background-image: url(/local/templates/demoshop/images/logo.svg);
+	background-size: contain;
+}

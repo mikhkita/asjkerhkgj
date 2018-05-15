@@ -3,11 +3,16 @@ body{
 	min-width: 240px;
 	overflow-x: hidden;
 }
-#top_nav{
+#top_nav {
 		height: auto;
 		position: static;
 		width: 100%;
+		border: 0px;
+		display: none;
 	}
+.top_nav {
+	width: auto;
+}
 .two-cols{
 		margin: 0px;
 		float: right;
@@ -19,7 +24,8 @@ ul#menu-top {
 }
 
 #accordion {
-	display: block !important;
+	display: none !important;
+	margin-top: 12px;
 }
 #footer.demo {
 	margin-top: -70px !important;
@@ -235,4 +241,25 @@ div.accordion-inner ul li a.enabled {
 .carusel-my02 img{
 	height: auto;
 	width: 100%;
+}
+.detalet-cart {
+	display: none;
+}
+.single-slide {
+	display: block !important;
+}
+.nav-bg {
+	display: none;
+}
+.card-tab-det {
+	margin: 0px;
+}
+.wrapper-l span {
+	font-size: 14px;
+}
+.wrapper-avail {
+	font-size: 14px;
+}
+.map-text {
+	font-size: 14px;
 }
