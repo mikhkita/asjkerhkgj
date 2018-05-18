@@ -87,6 +87,9 @@ form .column:nth-child(2) {
 	
 	float: right;
 }
+.column {
+	margin-top: 12px;
+}
 .bx-google-map{
 	width: 100% !important;
 }
@@ -224,12 +227,14 @@ div.accordion-inner ul li a.enabled {
 	margin-top: 5px;
 }
 .b-btn-red {
-	width: 200px;
+	width: 50% !important;
+	height: 42px;
+	font-size: 14px !important;
 }
 .feedback__submit {
-	padding: 14px 61px;
+	padding-top: 11px !important;
 	font-size: 14px;
-	margin-bottom: 22px;
+	margin-bottom: 34px;
 	margin-top: 10px;
 }
 .content {
@@ -262,4 +267,10 @@ div.accordion-inner ul li a.enabled {
 }
 .map-text {
 	font-size: 14px;
+}
+.square {
+	width: calc((100% - 42px) / 3) !important;
+}
+.square:nth-child(3n) {
+	margin-right: 0px !important;
 }

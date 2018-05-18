@@ -47,18 +47,18 @@ form .column {
 	width: 100%;
 }
 .feedback__name_icon{
-	top: 13px;
+	top: 25px;
 	right: 24px;
 	left: auto;
 
 }
 .feedback__mail_icon{
-	top: 70px;
+	top: 82px;
 	right: 24px;
 	left: auto;
 }
 .feedback__phone_icon{
-	top: 120px;
+	top: 132px;
 	right: 24px;
 	left: auto;
 }
@@ -131,4 +131,13 @@ a:hover {
 	padding: 6px;
 	margin-top: 10px;
     visibility: visible;
+}
+.square {
+	width: calc((100% - 36px) / 2) !important;
+}
+.square:nth-child(2n) {
+	margin-right: 0px !important;
+}
+.square:nth-child(3n) {
+	margin-right: 4px !important;
 }

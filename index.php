@@ -4,11 +4,11 @@ $APPLICATION->SetPageProperty("title", "Dжекиt");
 $APPLICATION->SetPageProperty("description", "Интернет-каталог одежды для мужчин и женщин Dжекиt");
 $APPLICATION->SetTitle("Dжекиt");
 ?>
-<a href="http://djekit/catalog/muzhchinam/" class="main-man">
+<a href="/catalog/muzhchinam/" class="main-man">
 	<p class="mobile-but">Мужчинам</p>
 </a>
 
-<a href="http://djekit/catalog/zhenshchinam/" class="main-woman">
+<a href="/catalog/zhenshchinam/" class="main-woman">
 	<p class="mobile-but">Женщинам</p>
 </a>
 

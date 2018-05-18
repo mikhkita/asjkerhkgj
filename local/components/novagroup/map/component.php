@@ -102,5 +102,48 @@ if ($arParams["ONLY_CATALOG"] != "Y") {
 $arResult['MENU'] = $menu;
 
 $this -> IncludeComponentTemplate();
-
 ?>
+<html>
+<div>
+    <h2>Женщинам</h2>
+    <div class="squares">
+         <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Ветровки</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Куртки демисезонные</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Пальто</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Пуховики и зимние куртки</h3>
+        </a> 
+    </div> 
+</div>
+<div>
+    <h2>Мужчинам</h2>
+    <div class="squares">        
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Брюки утепленные</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Ветровки</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Куртки демисезонные</h3>
+        </a> 
+        <a href="#" class="square">
+            <img src="/local/templates/demoshop/images/main-man.jpg">
+            <h3>Пуховики и зимние куртки</h3>
+        </a> 
+    </div> 
+</div>
+</html>

@@ -79,3 +79,36 @@ input.error,textarea.error{
 	background-image: url(/local/templates/demoshop/images/logo.svg);
 	background-size: contain;
 }
+.square {
+	width: calc((100% - 36px) / 4);
+	display: inline-block;
+	margin-right: 4px !important;
+	margin-bottom: 6px !important;
+	border: 0px;
+	font-size: 16px;
+}
+.square:nth-child(4n) {
+	margin-right: 0px !important;
+}
+.span8 {
+	width: 100%;
+}
+.map.left-list {
+	padding-left: 0px;
+}
+.square-container h3 {
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+}
+.square-container {
+	position: relative;
+}
+.span8 ul {
+	display: none;
+}
+.span8 h3 {
+	font-size: 14px;
+}
