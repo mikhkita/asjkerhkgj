@@ -6,9 +6,10 @@ IncludeTemplateLangFile(__FILE__); $VERSION_MODULE = NovaGroupGetVersionModule()
 //pre($arResult['prop']);
 //pre($arResult['ELEMENT']);
 //pre($arResult['SCALE']);
+
 if (count($arResult['SUBSECTIONS']) > 0) {
     ?>
-
+<div id="left">
     <div class="accordion">
         <div class="accordion-group category-top">
             <div class="accordion-heading category">
@@ -203,6 +204,7 @@ if (count($arResult['SUBSECTIONS']) > 0) {
 ?>
 <div id="old-navi-chain" style="display:none;"></div>
 <div id="old-meta-title" style="display:none;"></div>
+</div>
 </div>
 
 <script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap-slider.js?<?=$VERSION_MODULE?>"></script>

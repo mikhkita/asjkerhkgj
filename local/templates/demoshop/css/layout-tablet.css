@@ -3,11 +3,16 @@ body{
 	min-width: 240px;
 	overflow-x: hidden;
 }
-#top_nav{
+#top_nav {
 		height: auto;
 		position: static;
 		width: 100%;
+		border: 0px;
+		display: none;
 	}
+.top_nav {
+	width: auto;
+}
 .two-cols{
 		margin: 0px;
 		float: right;
@@ -19,10 +24,8 @@ ul#menu-top {
 }
 
 #accordion {
-	display: block !important;
-}
-.carusel-my02 {
-	display: none;
+	/*display: none !important;*/
+	/*margin-top: 12px;*/
 }
 #footer.demo {
 	margin-top: -70px !important;
@@ -84,6 +87,9 @@ form .column:nth-child(2) {
 	
 	float: right;
 }
+.column {
+	margin-top: 12px;
+}
 .bx-google-map{
 	width: 100% !important;
 }
@@ -113,7 +119,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	display: block;
 }
 .map-icon {
-	left: 132px;
+	left: 140px;
 }
 .address-line {
 	margin-bottom: 12px;
@@ -129,7 +135,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	width: auto;
 }
 .col3-list .list .item {
-	width: calc((100% / 3) - 20px);
+	width: calc((100% / 3) - 15px);
 }
 .main {
 	width: 100%;
@@ -199,12 +205,34 @@ div.accordion-inner ul li a.enabled {
 	font-size: 14px;
 	padding: 5px 0;
 }
-.ui-widget {
-	font-size: 14px !important;
+
+.ui-icon {
+	display: none;
 }
- .page-container {
+.ui-state-default {
+	border: none;
+}
+.ui-state-default a{
+	color: #1b1b1b;
+}
+.ui-accordion-header {
+	padding: 0px !important;
+	font-size: 18px !important;
+	padding-top: 5px !important;
+}
+.ui-accordion-header:first-child {
+	padding-top: 0px !important;
+}
+.ui-accordion-content{
+	padding: 0px !important;
+	font-size: 14px;
+}
+.ui-accordion-content li {
+	padding-top: 5px;
+}
+/* .page-container {
  	min-height: 100vh;
- }
+ }*/
 .slider {
 	width: 100%;
 }
@@ -221,14 +249,53 @@ div.accordion-inner ul li a.enabled {
 	margin-top: 5px;
 }
 .b-btn-red {
-	width: 200px;
+	width: 50% !important;
+	height: 42px;
+	font-size: 14px !important;
 }
 .feedback__submit {
-	padding: 14px 61px;
+	padding-top: 11px !important;
 	font-size: 14px;
-	margin-bottom: 22px;
+	margin-bottom: 34px;
 	margin-top: 10px;
 }
 .content {
 	clear: none;
+}
+.carusel-my02 {
+	height: auto;
+}
+.carusel-my02 img{
+	height: auto;
+	width: 100%;
+}
+.detalet-cart {
+	display: none;
+}
+.single-slide {
+	display: block !important;
+}
+.nav-bg {
+	display: none;
+}
+.card-tab-det {
+	margin: 0px;
+}
+.wrapper-l span {
+	font-size: 14px;
+}
+.wrapper-avail {
+	font-size: 14px;
+}
+.map-text {
+	font-size: 14px;
+}
+.square {
+	width: calc((100% - 42px) / 3) !important;
+}
+.square:nth-child(3n) {
+	margin-right: 0px !important;
+}
+.toggle-button {
+	display: none;
 }

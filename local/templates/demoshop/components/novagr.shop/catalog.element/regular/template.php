@@ -56,7 +56,10 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
-
+        <div class="single-slide">
+            <div><img src="<?=SITE_TEMPLATE_PATH?>/images/slider1.jpg"></div>
+            <div><img src="<?=SITE_TEMPLATE_PATH?>/images/slider2.jpg"></div>
+        </div>
 	</div>
 	<div class="col-right">
 		<div class="card-tab-det">

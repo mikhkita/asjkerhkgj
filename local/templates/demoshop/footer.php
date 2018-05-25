@@ -111,6 +111,8 @@ $APPLICATION->IncludeFile(SITE_DIR.'include/catalog/cabinet/quick-buy.php');
 	});
 </script>
 </div>
+</header>
+</main>
 <!--[if lt IE 9]>
 <?include(getenv("DOCUMENT_ROOT").SITE_DIR."oldbrowser.php")?>
 <![endif]-->
