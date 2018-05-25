@@ -110,7 +110,6 @@
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: Arial,Helvetica,sans-serif;
 	font-size: 1em;
 }
 .ui-widget .ui-widget {
@@ -128,7 +127,7 @@
 }
 .ui-widget-content {
 	border: none;
-	background: #ffffff;
+	background: none;
 	color: #333333;
 }
 .ui-widget-content a {
@@ -157,7 +156,7 @@ html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
 	border-top: 1px solid #c5c5c5;
 	border-bottom: 1px solid #c5c5c5;
-	background: #ffffff;
+	background: #f8f8f8;
 	font-weight: normal;
 	color: #454545;
 }
@@ -168,7 +167,7 @@ a.ui-button,
 a:link.ui-button,
 a:visited.ui-button,
 .ui-button {
-	color: #454545;
+	color: #1b1b1b;
 	text-decoration: none;
 }
 .ui-state-hover,
@@ -181,7 +180,7 @@ a:visited.ui-button,
 .ui-button:focus {
 	border-top: 1px solid #cccccc;
 	border-top: 1px solid #cccccc;
-	background: #ffffff;
+	background: #f8f8f8;
 	font-weight: normal;
 	color: #2b2b2b;
 }
@@ -195,7 +194,7 @@ a:visited.ui-button,
 .ui-state-focus a:visited,
 a.ui-button:hover,
 a.ui-button:focus {
-	color: #2b2b2b;
+	color: #1b1b1b;
 	text-decoration: none;
 }
 
@@ -210,7 +209,7 @@ a.ui-button:active,
 .ui-button.ui-state-active:hover {
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
-	background: #ffffff;
+	background: none;
 	font-weight: normal;
 	color: #ffffff;
 }

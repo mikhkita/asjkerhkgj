@@ -69,6 +69,7 @@ IncludeTemplateLangFile(__FILE__);
 	$APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/logout.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery-ui.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slick.css?".$VERSION_MODULE);
+    $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slideout.css?".$VERSION_MODULE);
 	
 	if (!isMobile())
 		$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/default_style.css?".$VERSION_MODULE);
@@ -97,6 +98,7 @@ IncludeTemplateLangFile(__FILE__);
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/KitSend.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-ui.min.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slick.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slideout.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
 
 /*
@@ -250,6 +252,66 @@ if ($detailCardView == 2) {
 
 </head>
 <body>
+<nav id="menu">
+    <header>
+        <h2 class="menu-header">Меню</h2>   
+        <ul class="menu-wrap">    
+            <li>
+                <a href="/">
+                    <h3>Главная</h3>
+                </a>
+            <li>
+            <li>
+                <a href="/about">
+                    <h3>О компании</h3>
+                </a>
+            </li>
+            <li>
+                <div id="accordion">
+                    <h3><a href="#">Женщинам</a></h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="/catalog/zhenshchinam_vetrovki/">Ветровки</a>
+                            <li>    
+                                <a href="/catalog/zhenshchinam_kurtki_demisezonnye/">Куртки демисезонные</a>
+                            </li>
+                            <li>    
+                                <a href="/catalog/zhenshchinam_palto/">Пальто</a>
+                            </li>
+                            <li>
+                                <a href="/catalog/zhenshchinam_pukhoviki_i_zimnie_kurtki/">Пуховики зимние и куртки</a>
+                            </li>
+                        </ul>
+                    </div>
+                <h3><a href="#">Мужчинам</a></h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="/catalog/muzhchinam_bryuki_uteplyennye/">Брюки утепленные</a>
+                            </li>
+                            <li>
+                                <a href="/catalog/muzhchinam_vetrovki/">Ветровки</a>
+                            <li>    
+                                <a href="/catalog/muzhchinam_kurtki_demisezonnye/">Куртки демисезонные</a>
+                            </li>
+                            <li>    
+                                <a href="/catalog/muzhchinam_pukhoviki_i_zimnie_kurtki/">Пуховики и зимние куртки</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/contacts/">
+                        <h3>Контакты</h3>
+                    </a>
+                </li>    
+            </ul>
+        </div>
+    </header>
+</nav>
+<main id="panel">
+    <header>
 <div id="not-old-browser">
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
 <div class="page-container">
@@ -262,9 +324,9 @@ if ($detailCardView == 2) {
                         <div class="logo-l"></div>
                     </a>
                 </div>
-                <a href="#" class="burger-menu">
+                <button class="toggle-button">
 
-                </a>
+                </button>
                 <a href="#" class="lupa-hide" id="hider">
 
                 </a>
@@ -384,8 +446,6 @@ if ($detailCardView == 2) {
                     false
                 );?>
             </div>
-
-            <div id="left">
 <?php
     if ($oneColumnFlag == true ) {
         // hide block in detail card
@@ -405,7 +465,6 @@ if ($detailCardView == 2) {
     }   
 ?>  
         <!-- end -->
- </div>
             <div class="content proba <? if ($oneColumnFlag !== true ): ?>two-cols<? endif; ?>">
                 <?php
                 if ($oneColumnFlag == true) {
@@ -439,5 +498,12 @@ if ($detailCardView == 2) {
                         <div>
                             <?}?>
                             <!--  content  -->
+                            <a href="#" class="filter-hide" id="filter-hider">
+                                Показать фильтр
+                            </a>
+                            <div class="mobile-filter">
+                                
+                            </div>
                             <div id="workarea">
+
                                 

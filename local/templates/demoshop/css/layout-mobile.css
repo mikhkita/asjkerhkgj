@@ -20,14 +20,16 @@ body{
     bottom: -1px;
     margin-right: 16px;
 }
-.burger-menu{
-	display: inline-block;
-	content: url(../images/menu.svg);
+.toggle-button{
+	display: inline-block !important;
+	background: white;
+	background-image: url(../images/menu.svg);
 	height: 28px;
 	width: 28px;
 	float: right;
 	position: relative;
     bottom: 1px;
+    border: none;
 }
 .form-demo {
 	margin: 0px;
@@ -133,11 +135,85 @@ a:hover {
     visibility: visible;
 }
 .square {
-	width: calc((100% - 36px) / 2) !important;
+	width: calc((100% - 20px) / 2) !important;
 }
 .square:nth-child(2n) {
 	margin-right: 0px !important;
+	float: right !important;
 }
 .square:nth-child(3n) {
 	margin-right: 4px !important;
+}
+.wrap-links {
+	display: none;
+}
+#footer.demo {
+	border: none;
+	background:none;
+}
+.menu-header {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 24px 24px 26px 24px;;
+}
+.menu-wrap {
+	background-color: #f8f8f8;
+    padding: 8px 0;
+}
+.ui-accordion {
+	background-color: #f8f8f8;
+}
+.menu-wrap a {
+	display: block;
+    color: #1b1b1b;
+    font-size: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.menu-wrap li {
+	padding: 0px 24px;
+}
+.menu-wrap h3 {
+	font-size: 20px;
+}
+.menu-wrap li:last-child a{
+	border-bottom: 0px;
+}
+#accordion li a{
+	font-size: 18px;
+}
+#accordion {
+	display: block !important;
+}
+#left.show-f{
+	opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+#left {
+	opacity: 0;
+	overflow: hidden;
+	height: 0px;
+	padding: 0px;
+	margin-top: 0px;
+    visibility: hidden;
+    -webkit-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    -moz-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    -o-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+}
+.filter-hide{
+	display: inline-block !important;
+	background-color: rgb(110, 110, 110);
+	color: white;
+	float: left;
+	position: relative;
+  	padding: 12px 24px;
+  	margin-bottom: 10px;
+  	font-size: 14px;
+}
+.filter-hide:hover{
+	color: white !important;
 }

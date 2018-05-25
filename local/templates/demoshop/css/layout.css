@@ -112,3 +112,12 @@ input.error,textarea.error{
 .span8 h3 {
 	font-size: 14px;
 }
+.toggle-button {
+	display: none;
+}
+.filter-hide {
+	display: none;
+}
+.hide {
+	display: none !important;
+}
