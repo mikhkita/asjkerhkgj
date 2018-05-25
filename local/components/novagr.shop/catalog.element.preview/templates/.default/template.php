@@ -51,13 +51,12 @@ $this->setFrameMode(true);
             <?  
 
             /*----------Заголовок для разделов----------*/
-            
+
             $res = CIBlockSection::GetByID($val["IBLOCK_SECTION_ID"]);
+
             if($ar_res = $res->GetNext()){
                 $APPLICATION->SetTitle($ar_res['NAME']);
-
             }
-
             $rsSections = CIBlockSection::GetList(
                array(), 
                array(
@@ -66,6 +65,7 @@ $this->setFrameMode(true);
                false, 
                array("ID", "DEPTH_LEVEL", "SECTION_PAGE_URL", "UF_*")
             );
+            
             while($arSection = $rsSections->Fetch())
                 if($arSection['ID'] == $val["IBLOCK_SECTION_ID"])
                     if($arSection['UF_TITLE_H1'])

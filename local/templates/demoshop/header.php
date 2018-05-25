@@ -415,22 +415,22 @@ if ($detailCardView == 2) {
                         <?php
                         }
                         ?>
-                        <?if($showSectionsCatalog==false){?>
+                        <?if($showSectionsCatalog==false && $currentUri !="/"){?>
                         <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
                         <?
                         $APPLICATION->SetPageProperty("title"); 
                         ?>
                         <div id="chain-hint"><?php
                         $APPLICATION->IncludeComponent(
-    "bitrix:breadcrumb", 
-    "djekit", 
-    array(
-        "START_FROM" => "0",
-        "PATH" => "",
-        "SITE_ID" => "s1"
-    ),
-    false
-);?></div>
+                            "bitrix:breadcrumb", 
+                            "djekit", 
+                            array(
+                                "START_FROM" => "0",
+                                "PATH" => "",
+                                "SITE_ID" => "s1"
+                            ),
+                            false
+                        );?></div>
                         <div>
                             <?}?>
                             <!--  content  -->

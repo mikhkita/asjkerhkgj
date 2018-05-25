@@ -339,11 +339,11 @@ if (!empty($arResult['ELEMENT']["ID"])) {
                     <span class="brand-l">Цена: </span>
             <?
             if($cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["DISCOUNT_VALUE_VAT"] != $cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["VALUE_VAT"]){
-                ?><span id="sum" class="discount" style="font-size: 20px"><?=intval($cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["DISCOUNT_VALUE_VAT"])?></span>
-                <span id="old-price" class="old-price" style="font-size: 20px"><?=intval($cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["VALUE_VAT"])?></span><?
+                ?><span id="sum" class="discount" style="font-size: 20px"><?=intval($cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["DISCOUNT_VALUE_VAT"])?> руб.</span>
+                <span id="old-price" class="old-price" style="font-size: 20px"><?=intval($cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["VALUE_VAT"])?> руб.</span><?
             }
             else{
-            ?><span id="sum" class="default-value" style="font-size: 20px"><?=$cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["VALUE_VAT"]?></span><?
+            ?><span id="sum" class="default-value" style="font-size: 20px"><?=$cheapest_item["PRICES"][$arResult["CUR_PRICE_CODE"]]["VALUE_VAT"]?> руб.</span><?
             }
             ?>
                 </div>

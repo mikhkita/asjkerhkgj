@@ -2,6 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
 
 // some servers return ../index.php in path
+
 $currentUri = (isset($arParams['COMPONENT_CURRENT_PAGE']) and strlen($arParams['COMPONENT_CURRENT_PAGE'])>0) ? $arParams['COMPONENT_CURRENT_PAGE'] : $APPLICATION->GetCurPage(false);
 $arParams['COMPONENT_CURRENT_PAGE'] = $currentUri;
 
