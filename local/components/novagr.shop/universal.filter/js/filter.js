@@ -1,3 +1,4 @@
+
 var objFilter = {
 	SESS_INCLUDE_AREAS	: 0,	// ������� �� ����� ��������������
 	FIRST_TIME			: 1,

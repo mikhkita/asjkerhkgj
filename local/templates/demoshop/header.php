@@ -69,6 +69,7 @@ IncludeTemplateLangFile(__FILE__);
 	$APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/logout.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery-ui.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slick.css?".$VERSION_MODULE);
+    $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slick-theme.css?".$VERSION_MODULE);
     $APPLICATION -> SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/slideout.css?".$VERSION_MODULE);
 	
 	if (!isMobile())
@@ -291,7 +292,7 @@ if ($detailCardView == 2) {
                                 <a href="/catalog/muzhchinam_bryuki_uteplyennye/">Брюки утепленные</a>
                             </li>
                             <li>
-                                <a href="/catalog/muzhchinam_vetrovki/">Ветровки</a>
+                                <a href="/catalog/zhenshchinam_vetrovki/">Ветровки</a>
                             <li>    
                                 <a href="/catalog/muzhchinam_kurtki_demisezonnye/">Куртки демисезонные</a>
                             </li>

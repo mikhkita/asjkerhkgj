@@ -107,19 +107,19 @@ $this -> IncludeComponentTemplate();
 <div>
     <h2>Женщинам</h2>
     <div class="squares">
-         <a href="#" class="square">
+         <a href="/catalog/zhenshchinam_vetrovki/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Ветровки</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/zhenshchinam_kurtki_demisezonnye/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Куртки демисезонные</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/zhenshchinam_palto/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Пальто</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/zhenshchinam_pukhoviki_i_zimnie_kurtki/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Пуховики и зимние куртки</h3>
         </a> 
@@ -128,19 +128,19 @@ $this -> IncludeComponentTemplate();
 <div>
     <h2>Мужчинам</h2>
     <div class="squares">        
-        <a href="#" class="square">
+        <a href="/catalog/muzhchinam_bryuki_uteplyennye/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Брюки утепленные</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/zhenshchinam_vetrovki/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Ветровки</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/muzhchinam_kurtki_demisezonnye/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Куртки демисезонные</h3>
         </a> 
-        <a href="#" class="square">
+        <a href="/catalog/muzhchinam_pukhoviki_i_zimnie_kurtki/" class="square">
             <img src="/local/templates/demoshop/images/main-man.jpg">
             <h3>Пуховики и зимние куртки</h3>
         </a> 

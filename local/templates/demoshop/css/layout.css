@@ -118,6 +118,15 @@ input.error,textarea.error{
 .filter-hide {
 	display: none;
 }
-.hide {
-	display: none !important;
+.show {
+	display: block !important;
+}
+.squares {
+	margin-top: 10px;
+}
+.accordion-toggle .ui-icon {
+	display: none;
+}
+.accordion:first-child {
+	margin-top: 10px;
 }
