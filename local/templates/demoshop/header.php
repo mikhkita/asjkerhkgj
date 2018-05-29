@@ -499,12 +499,13 @@ if ($detailCardView == 2) {
                         <div>
                             <?}?>
                             <!--  content  -->
-                            <a href="#" class="filter-hide" id="filter-hider">
-                                Показать фильтр
-                            </a>
+                            
                             <div class="mobile-filter">
                                 
                             </div>
+                            <a href="#" class="filter-hide" id="filter-hider">
+                                Показать фильтр
+                            </a>
                             <div id="workarea">
 
                                 

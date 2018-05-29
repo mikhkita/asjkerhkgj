@@ -373,3 +373,21 @@ div.product-count-bottom {
 	width: 10px;
 	height: 10px;
 }
+div.accordion-inner ul li {
+	padding: 8px 0 0 1px;
+}
+#left .accordion-inner {
+	padding: 2px 10px;
+}
+#left .accordion-heading a.my_clear {
+	top: 10px;
+}
+#left .accordion-heading #my_clear {
+	top: 2px;
+}
+#left .accordion-heading a.accordion-toggle {
+    background: url(/local/templates/demoshop/images/open.gif) no-repeat left 16px !important;
+}
+#left .accordion-heading a.accordion-toggle.collapsed {
+	background: url(/local/templates/demoshop/images/close.gif) no-repeat left 14px !important;
+}
