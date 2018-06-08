@@ -303,3 +303,6 @@ a {
 a:hover {
 	text-decoration: none !important;
 }
+input {
+	width: 195px;
+}

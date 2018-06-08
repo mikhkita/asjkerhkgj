@@ -391,3 +391,12 @@ div.accordion-inner ul li {
 #left .accordion-heading a.accordion-toggle.collapsed {
 	background: url(/local/templates/demoshop/images/close.gif) no-repeat left 14px !important;
 }
+.page-container {
+	overflow: hidden;
+}
+.copyright span.cp {
+	margin-right: 0px;
+}
+input {
+	width: 195px;
+}

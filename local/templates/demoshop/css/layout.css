@@ -130,3 +130,6 @@ input.error,textarea.error{
 .accordion:first-child {
 	margin-top: 10px;
 }
+.slider.slider-horizontal {
+	width: 90% !important;
+}
