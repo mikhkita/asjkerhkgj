@@ -3,6 +3,7 @@
  * @var CBitrixComponentTemplate $this
  */
 $this->setFrameMode(true);
+
 ?>
 <!--start_html-->
 <div class="col3-list stuff-box" id="elements">

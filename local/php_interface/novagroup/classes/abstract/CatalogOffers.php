@@ -397,5 +397,4 @@ abstract class Novagroup_Classes_Abstract_CatalogOffers extends Novagroup_Classe
             }
         }
     }
-
 }

@@ -2,7 +2,10 @@
 $this->setFrameMode(true);?>
 
     <?php
+    
         if(count($MENU = $arResult['MENU'])>0){
+
+            var_dump($MENU);
         ?>
         <ul class="">
             <?php

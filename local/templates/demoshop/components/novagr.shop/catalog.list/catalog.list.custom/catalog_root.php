@@ -5,7 +5,6 @@ $this->setFrameMode(true);?>
 <!--        <img width="310" height="676" alt="�������" src="--><?//= SITE_TEMPLATE_PATH ?><!--/images/catalog-005.jpg">-->
 <!--    </div>-->
     <div class="span8 map left-list link-mas">
-    <h3><?=GetMessage("CATALOG_LABEL")?></h3>
     <?$APPLICATION->IncludeComponent("novagroup:map",
         "",
         Array(

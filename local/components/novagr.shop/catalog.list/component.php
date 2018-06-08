@@ -1,4 +1,5 @@
 <?
+
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 // set current price for filter
@@ -116,7 +117,6 @@ if ($this->StartResultCache(false, $cacheParams, SITE_ID . "/novagr.shop/catalog
     ) {
         $arResult['CATALOG_ROOT'] = 1;
     }
-
 
     if ($arResult['CATALOG_ROOT'] == 1) {
         $this->IncludeComponentTemplate("catalog_root");
