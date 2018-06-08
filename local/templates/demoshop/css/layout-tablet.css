@@ -170,7 +170,8 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	height: auto;
 }
 .col-left {
-	width: 100%;
+	width: 50%;
+	float: left;
 }
 .card-tool {
 	position: relative;
@@ -270,11 +271,11 @@ div.accordion-inner ul li a.enabled {
 	width: 100%;
 }
 .detalet-cart {
-	display: none;
+	display: block;
 }
-.single-slide {
+/*.single-slide {
 	display: block !important;
-}
+}*/
 .nav-bg {
 	display: none;
 }
@@ -305,4 +306,7 @@ a:hover {
 }
 input {
 	width: 195px;
+}
+.col-right {
+	width: 50%;
 }

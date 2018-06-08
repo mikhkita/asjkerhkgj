@@ -39,7 +39,7 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 		}
 	}
 ?>
-<div class="col-left">
+
 	<div class="col-left">
 		<div class="detalet-cart">
 			<div class="img-photos-demo">
@@ -328,7 +328,7 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 
 		</div>   
 	</div>
-</div>
+
 
     <?
     if (($_REQUEST['CAJAX']!=="1") || ($_REQUEST['FULL'] == 1)) {

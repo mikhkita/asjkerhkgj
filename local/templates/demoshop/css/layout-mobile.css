@@ -400,3 +400,15 @@ div.accordion-inner ul li {
 input {
 	width: 195px;
 }
+.detalet-cart {
+	display: none !important;
+}
+.col-left {
+	width: 100%;
+}
+.col-right {
+	width: 100%;
+}
+.single-slide {
+	display: block !important;
+}
