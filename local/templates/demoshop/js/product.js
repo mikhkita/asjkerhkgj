@@ -657,7 +657,6 @@ var product = {
             product.photoBuffer = arrPic;
             return;
         }
-
         var bigPhotosHtml = '', smallPhotosHtml = '';
         var firstPicSrc = '';
         var j=1;

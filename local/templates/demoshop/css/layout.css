@@ -133,3 +133,20 @@ input.error,textarea.error{
 .slider.slider-horizontal {
 	width: 90% !important;
 }
+.nav-bg{
+	height: unset;
+}
+#footer{
+	position: unset;
+	height: unset;
+	margin-top: unset !important;
+}
+.demo-clearfix{
+	height: unset;
+}
+.menu-wrap{
+	display: none;
+}
+.menu-header{
+	display: none;
+}

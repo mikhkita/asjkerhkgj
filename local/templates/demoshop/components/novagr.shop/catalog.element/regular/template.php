@@ -9,13 +9,13 @@ $APPLICATION->SetTitle("Каталог");
 //pre($arResult);
 if (!empty($arResult['ELEMENT']["ID"])) {
 	$val = $arResult['ELEMENT'];
+
 //    pre($arResult['ELEMENT']);
     
 	// assembled links PhotoID and Source
 	$arPhotoID = array();
-	foreach($arResult['ELEMENT_PHOTO'] as $key => $value)
-		$arPhotoID[ $key ] = $value['SRC'];
-	
+
+    // var_dump($arResult['ELEMENT']);
 	// compiled array for ajaximgload
 	foreach ($arResult["OFFERS"] as $item)
 	{
@@ -30,6 +30,11 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 					{
 						$arPhoto[$photo_property][ $item['ID'] ][$key]['IMG_ID'] = array_search($photo,$arPhotoID);
 						$arPhoto[$photo_property][ $item['ID'] ][$key]['SOURCE'] = $photo;
+
+
+                        ?>
+                       <!--  <img src="<?=$arPhoto[$photo_property][ $item['ID'] ][$key]['SOURCE']?>"> -->
+                        <?
 					}
 					// reset not resize photo and set default ajax preloader
                     // TODO: разобраться с размерами

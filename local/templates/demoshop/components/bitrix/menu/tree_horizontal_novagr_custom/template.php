@@ -151,6 +151,7 @@ if (count($arResult) < 1)
                 <a class="root-item" href="<?= $arItem['LINK'] ?>"><?= $arItem['TEXT'] ?></a>
             </li>
         <?php
+
         endif;
     endforeach;
     ?>

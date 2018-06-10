@@ -156,10 +156,12 @@ form .column {
     margin-bottom: 0;
     padding: 24px 24px 26px 24px;
     font-weight: bold;
+    display: block !important;
 }
 .menu-wrap {
 	background-color: #f8f8f8;
     padding: 8px 0;
+    display: block !important;
 }
 .ui-accordion {
 	background-color: #f8f8f8;
