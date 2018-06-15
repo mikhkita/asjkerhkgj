@@ -42,6 +42,16 @@ $( document ).ready(function() {
    		arrows: false,
         dots: true
  	});
+
+    $(".btn-group.color-ch button").click(function(){
+        $(".col-left .single-slide").addClass("hide");
+        var color = $(this).attr('data-color');
+        $(".single-slide[data-color ="+color+"]").removeClass('hide');
+        $('.single-slide').each(function(){
+            $(this).get(0).slick.setPosition();
+        });
+    });
+
     var slideout = new Slideout({
       'panel': document.getElementById('panel'),
       'menu': document.getElementById('menu'),

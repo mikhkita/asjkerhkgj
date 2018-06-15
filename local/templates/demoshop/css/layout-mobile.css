@@ -414,3 +414,7 @@ input {
 .single-slide {
 	display: block !important;
 }
+.slick-container{
+	height: 400px !important; 
+	margin-bottom: 30px !important;
+}

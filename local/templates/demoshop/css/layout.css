@@ -150,3 +150,14 @@ input.error,textarea.error{
 .menu-header{
 	display: none;
 }
+.hide{
+	display: none !important;
+}
+.slick-slide img{
+	max-height: 400px;
+	display: inline-block;
+}
+.slick-container{
+	height: 0;
+	margin-bottom: 0;
+}

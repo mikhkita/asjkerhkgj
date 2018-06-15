@@ -6,7 +6,8 @@ $this->setFrameMode(true);
 $ajaxUrl = SITE_DIR.'include/ajax/add2basket.php';
 $APPLICATION->SetTitle("Каталог");
 
-//pre($arResult);
+// pre($arResult['OFFERS']);
+
 if (!empty($arResult['ELEMENT']["ID"])) {
 	$val = $arResult['ELEMENT'];
 
@@ -17,8 +18,13 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 
     // var_dump($arResult['ELEMENT']);
 	// compiled array for ajaximgload
+    
 	foreach ($arResult["OFFERS"] as $item)
-	{
+	{  
+
+        $itemColor[$item['ID']] = $item['PROPERTIES']['COLOR']['VALUE'];
+        $arColors['COLORS'] = array_unique($itemColor);
+
         $photos_properties = array('curPhotosSmall','curPhotosMiddle');
 		foreach($photos_properties as $photo_property)
 		{
@@ -30,19 +36,12 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 					{
 						$arPhoto[$photo_property][ $item['ID'] ][$key]['IMG_ID'] = array_search($photo,$arPhotoID);
 						$arPhoto[$photo_property][ $item['ID'] ][$key]['SOURCE'] = $photo;
-
-
-                        ?>
-                       <!--  <img src="<?=$arPhoto[$photo_property][ $item['ID'] ][$key]['SOURCE']?>"> -->
-                        <?
 					}
-					// reset not resize photo and set default ajax preloader
-                    // TODO: разобраться с размерами
-//					$arResult['DETAIL_IMAGES'][$item['ID']][$photo_property][$key] = SITE_TEMPLATE_PATH."/images/transparent.png";
 				}
 			}
 		}
 	}
+    
 ?>
 
 	<div class="col-left">
@@ -61,9 +60,21 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 			<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
-        <div class="single-slide">
-            <div><img src="<?=SITE_TEMPLATE_PATH?>/images/slider1.jpg"></div>
-            <div><img src="<?=SITE_TEMPLATE_PATH?>/images/slider2.jpg"></div>
+        
+
+    <?$i = 0;?>
+        <div class="slick-container">
+            <?foreach ($arColors['COLORS'] as $id => $item):?>  
+                    <?if($i == 0):?>
+                        <div class="single-slide" data-color = "<?=$item?>">
+                    <?else:?>
+                        <div class="single-slide hide" data-color = "<?=$item?>">
+                    <?endif;?>
+                            <div style="text-align: center"><img src="<?=$arResult['DETAIL_IMAGES'][$id]["curPhotosBig"][0]?>"></div>
+                            <div style="text-align: center"><img src="<?=$arResult['DETAIL_IMAGES'][$id]["curPhotosBig"][1]?>"></div>
+                        </div>
+                <?$i++;?>
+            <?endforeach;?>
         </div>
 	</div>
 	<div class="col-right">
