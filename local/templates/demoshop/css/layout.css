@@ -167,3 +167,7 @@ input.error,textarea.error{
 #menu{
 	opacity: 0;
 }
+.filter-hide{
+	opacity: 0;
+	font-size: 0px;
+}
