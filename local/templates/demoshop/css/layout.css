@@ -150,7 +150,7 @@ input.error,textarea.error{
 .menu-header{
 	display: none;
 }
-.hide{
+.hide-slick{
 	display: none !important;
 }
 .slick-slide img{
@@ -174,4 +174,10 @@ input.error,textarea.error{
 .col3-list .item .over{
 	text-align: unset;
 
+}
+.card-sale-min{
+	background-size: cover;
+}
+.card-sale{
+	background-size: cover;
 }

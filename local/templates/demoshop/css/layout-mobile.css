@@ -229,6 +229,10 @@ form .column {
 	opacity: 1;
     visibility: visible;
     height: 100%;
+    -webkit-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    -moz-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    -o-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
+    transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
 }
 #left {
 	opacity: 0;
@@ -237,10 +241,6 @@ form .column {
 	padding: 0px;
 	margin-top: 0px;
     visibility: hidden;
-    -webkit-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
-    -moz-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
-    -o-transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
-    transition: opacity 0.5s, height 0.5s, padding 0.5s, margin-top 0.5s, visibility 0.5s;
 }
 .filter-hide{
 	display: none !important;
@@ -311,6 +311,7 @@ div.product-count-bottom {
 }
 .pagination-right {
 	float: left;
+	padding-top: 5px;
 }
 .pagination ul > li:first-child > a, .pagination ul > li:first-child > span {
 	padding-left: 0px !important;
@@ -421,4 +422,28 @@ input {
 .filter-hide {
 	opacity: 1 !important;
 	font-size: 14px !important;
+}
+#size-table{
+	display: none;
+}
+#left .accordion-inner{
+	height: 100%;
+	padding-bottom: 12px;
+}
+#collapse-STD_SIZE .attribute-items{
+	-webkit-column-count: 2;
+	column-count: 3;
+}
+.attribute-items{
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+.detail{
+	margin-top: 30px;
+}
+.bot-p{
+	padding-top: 0px;
+}
+div.accordion-inner ul li a{
+	padding: 0px 0 2px 15px;
 }

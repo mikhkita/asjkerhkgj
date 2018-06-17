@@ -36,7 +36,7 @@ $arResult['FORM_ACTION'] = $arParams['CATALOG_IBLOCK_PATH'];
 
 if($arParams["SHOW_INPUT"] !== "N"):?>
 	<div id="<?echo $CONTAINER_ID?>" class="form-demo">
-		<form id="searchForm" class="bs-docs-example form-inline" action="<?=$arResult["FORM_ACTION"];?>">
+		<form id="searchForm" auto class="bs-docs-example form-inline" action="<?=$arResult["FORM_ACTION"];?>">
 			
 				<input id="<?echo $INPUT_ID?>" type="text" name="q" size="40" maxlength="50" autocomplete="off" value="<? if (isset($_REQUEST["q"])) echo htmlspecialcharsbx($_REQUEST["q"]);?>" placeholder="<?=GetMessage("CT_BST_SEARCH_BUTTON");?>"   class="searchb" />
                 <?php/*
