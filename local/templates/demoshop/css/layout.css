@@ -161,3 +161,9 @@ input.error,textarea.error{
 	height: 0;
 	margin-bottom: 0;
 }
+#left{
+	margin-top: 10px;
+}
+#menu{
+	opacity: 0;
+}

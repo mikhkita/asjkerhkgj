@@ -60,7 +60,7 @@ $( document ).ready(function() {
       'side': 'right',
       'touch': false
     });
-  
+    $('#menu').css('opacity','1');
     function close(eve) {
     eve.preventDefault();
     slideout.close();

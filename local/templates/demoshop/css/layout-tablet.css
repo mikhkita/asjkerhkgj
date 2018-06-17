@@ -148,6 +148,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 }
 .preview {
 	width: auto !important;
+	margin-bottom: 15px;
 }
 #mobile {
 	margin-top: 10px;
