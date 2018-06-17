@@ -57,7 +57,7 @@ input.error,textarea.error{
 .content.proba {
 	margin-top: 0px;
 }
-#accordion {
+.accordion-mobile {
 	display: none;
 }
 .main-man {

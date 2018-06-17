@@ -12,7 +12,7 @@ $( document ).ready(function() {
             myHeight = document.body.clientHeight;
         }
     };
-  	$( "#accordion" ).accordion({
+  	$( ".accordion-mobile" ).accordion({
 	  	active: 2,
 	  	collapsible: true,
 	  	heightStyle: "content"

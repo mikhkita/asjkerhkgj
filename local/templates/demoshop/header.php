@@ -253,64 +253,23 @@ if ($detailCardView == 2) {
 
 </head>
 <body>
-<nav id="menu">
-    <header>
-        <h2 class="menu-header">Меню</h2>   
-        <ul class="menu-wrap">    
-            <li>
-                <a href="/">
-                    <h3>Главная</h3>
-                </a>
-            <li>
-            <li>
-                <a href="/about">
-                    <h3>О компании</h3>
-                </a>
-            </li>
-            <li>
-                <div id="accordion">
-                    <h3><a href="#">Женщинам</a></h3>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="/catalog/zhenshchinam_vetrovki/">Ветровки</a>
-                            <li>    
-                                <a href="/catalog/zhenshchinam_kurtki_demisezonnye/">Куртки демисезонные</a>
-                            </li>
-                            <li>    
-                                <a href="/catalog/zhenshchinam_palto/">Пальто</a>
-                            </li>
-                            <li>
-                                <a href="/catalog/zhenshchinam_pukhoviki_i_zimnie_kurtki/">Пуховики зимние и куртки</a>
-                            </li>
-                        </ul>
-                    </div>
-                <h3><a href="#">Мужчинам</a></h3>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="/catalog/muzhchinam_bryuki_uteplyennye/">Брюки утепленные</a>
-                            </li>
-                            <li>
-                                <a href="/catalog/zhenshchinam_vetrovki/">Ветровки</a>
-                            <li>    
-                                <a href="/catalog/muzhchinam_kurtki_demisezonnye/">Куртки демисезонные</a>
-                            </li>
-                            <li>    
-                                <a href="/catalog/muzhchinam_pukhoviki_i_zimnie_kurtki/">Пуховики и зимние куртки</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="/contacts/">
-                        <h3>Контакты</h3>
-                    </a>
-                </li>    
-            </ul>
-        </div>
-    </header>
-</nav>
+<?$APPLICATION->IncludeComponent(
+        "bitrix:menu",
+        "mobile-menu",
+        Array(
+            "ALLOW_MULTI_SELECT" => "N",
+            "CHILD_MENU_TYPE" => "left",
+            "DELAY" => "N",
+            "MAX_LEVEL" => "1",
+            "MENU_CACHE_GET_VARS" => array(""),
+            "MENU_CACHE_TIME" => "3600",
+            "MENU_CACHE_TYPE" => "N",
+            "MENU_CACHE_USE_GROUPS" => "Y",
+            "ROOT_MENU_TYPE" => "mobile",
+            "USE_EXT" => "N",
+        )
+    );?>
+
 <main id="panel">
     <header>
 <div id="not-old-browser">

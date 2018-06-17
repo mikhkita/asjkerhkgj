@@ -204,10 +204,10 @@ form .column {
 .menu-wrap li:last-child a{
 	border-bottom: 0px;
 }
-#accordion li a{
+.accordion-mobile li a{
 	font-size: 18px;
 }
-#accordion li a:before{
+.accordion-mobile li a:before{
 	 width: 5px;
      height: 5px;
      background: #656464;
@@ -222,7 +222,7 @@ form .column {
      position: relative;
      top: -2px;
 }
-#accordion {
+.accordion-mobile {
 	display: block !important;
 }
 #left.show-f{
