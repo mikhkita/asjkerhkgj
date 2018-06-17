@@ -93,6 +93,7 @@ if (count($arResult) < 1)
                                     if ($el = $res->Fetch()){
                                         $el_count = $el["CNT"];
                                     }?>
+
                                     <?if($el_count > 0):?>
                                     <td>
                                         <ul>
