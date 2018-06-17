@@ -255,11 +255,44 @@ if(is_array($arOffer))
 ?>
 <?if ($arParams['DISABLE_QUICK_VIEW'] !== 'Y'): ?>
     <script type="text/javascript">
+        var isDesktop = false,
+            isTablet = false,
+            isMobile = false,
+            isRetina = retina();
+
+        function resize(){
+           if( typeof( window.innerWidth ) == 'number' ) {
+                myWidth = window.innerWidth;
+                myHeight = window.innerHeight;
+            } else if( document.documentElement && ( document.documentElement.clientWidth || 
+            document.documentElement.clientHeight ) ) {
+                myWidth = document.documentElement.clientWidth;
+                myHeight = document.documentElement.clientHeight;
+            } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                myWidth = document.body.clientWidth;
+                myHeight = document.body.clientHeight;
+            }
+
+            if( myWidth > 1179 ){
+                isDesktop = true;
+                isTablet = false;
+                isMobile = false;
+            }else if( myWidth > 767 && myWidth < 1180 ){
+                isDesktop = false;
+                isTablet = true;
+                isMobile = false;
+            }else{
+                isDesktop = false;
+                isTablet = false;
+                isMobile = true;
+            }
+        }
+        
         var listProducts = {
             closedArr:[],
             currentID: 0,
             init: function() {
-                /*catalog.element.preview - ����������� ������� ��������*/
+                if (!isMobile) {
                 $('.list .line .item').hover(
                     function() {
                         listProducts.currentID = $(this).data('catalog-id');
@@ -294,6 +327,7 @@ if(is_array($arOffer))
                         });
                     }
                 );
+                }
             }
         };
         listProducts.init();
@@ -303,7 +337,6 @@ if(is_array($arOffer))
                 return loadPreviewElementModalWindow($(this).attr('href'),MODAL_PROPERTY_STD_SIZE);
             });
         });
-        /*����� ����������� ������� ��������*/
     </script>
 <?php endif;?>
 </div>
