@@ -167,3 +167,6 @@ input.error,textarea.error{
 #menu{
 	opacity: 0;
 }
+.col3-list .item .over{
+	text-align: unset;
+}
