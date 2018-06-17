@@ -16,7 +16,6 @@
                         <?if(count($MENU) > 1): ?>
                             <h2><?=$section[0]?></h2>
                         <?else:?>
-
                             <?$APPLICATION->SetTitle($section[0]);?>
                         <?endif;?>
 
