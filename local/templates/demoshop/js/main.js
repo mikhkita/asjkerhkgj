@@ -43,6 +43,7 @@ $( document ).ready(function() {
    		speed: 500,
    		slidesToScroll: 1,
    		arrows: false,
+        touchThreshold: 100,
         dots: true
  	});
 
