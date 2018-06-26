@@ -257,8 +257,7 @@ if(is_array($arOffer))
     <script type="text/javascript">
         var isDesktop = false,
             isTablet = false,
-            isMobile = false,
-            isRetina = retina();
+            isMobile = false;
 
         function resize(){
            if( typeof( window.innerWidth ) == 'number' ) {

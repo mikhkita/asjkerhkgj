@@ -36,7 +36,7 @@
                                     <? $rsParentSection = CIBlockSection::GetByID($squareItem[3]["SECTION"]["ID"]);
                                     while ($arSect = $rsParentSection->GetNext()){
                                         if ($arSect["PICTURE"]) {
-                                            $image = CFile::ResizeImageGet($arSect["PICTURE"], array('width'=>750, 'height'=>500), BX_RESIZE_IMAGE_EXACT, true);?>
+                                            $image = CFile::ResizeImageGet($arSect["PICTURE"], array('width'=>750, 'height'=>750), BX_RESIZE_IMAGE_EXACT, true);?>
                                             <img src="<?=$image["src"]?>"><?
                                         }
                                         else{

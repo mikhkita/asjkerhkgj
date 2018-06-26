@@ -17,6 +17,7 @@ $( document ).ready(function() {
 	  	collapsible: true,
 	  	heightStyle: "content"
     });
+
 	$(" #hider ").click(function(){
     	if ($(" #search ").hasClass("show-s")){
     		$(" #search ").removeClass("show-s");
@@ -159,5 +160,6 @@ $( document ).ready(function() {
         $(" #filter-hider ").addClass("show");
         $(" #accordion1 ").addClass("show");
     }
+    $(".accordion:first-child .accordion-body").addClass('in');
 });
 
