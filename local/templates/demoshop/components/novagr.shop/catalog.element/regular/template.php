@@ -68,7 +68,7 @@ if (!empty($arResult['ELEMENT']["ID"])) {
                     <?if($i == 0):?>
                         <div class="single-slide" data-color = "<?=$item?>">
                     <?else:?>
-                        <div class="single-slide hide" data-color = "<?=$item?>">
+                        <div class="single-slide hide-slick" data-color = "<?=$item?>">
                     <?endif;?>
                             <div style="text-align: center"><img src="<?=$arResult['DETAIL_IMAGES'][$id]["curPhotosBig"][0]?>"></div>
                             <div style="text-align: center"><img src="<?=$arResult['DETAIL_IMAGES'][$id]["curPhotosBig"][1]?>"></div>

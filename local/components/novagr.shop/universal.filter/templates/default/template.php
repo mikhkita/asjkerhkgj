@@ -9,6 +9,8 @@ IncludeTemplateLangFile(__FILE__); $VERSION_MODULE = NovaGroupGetVersionModule()
 
 if (count($arResult['SUBSECTIONS']) > 0) {
     ?>
+<h1 style="font-size: 24px; padding: 10px 0px;">Женские ветровки</h1>
+<div id="chain-hint"><ul class="breadcrumb"><li class=""><a href="/" title="Главная">Главная</a></li><li><span class="divider">&gt;</span></li><li class=""><a href="/catalog/" title="Каталог">Каталог</a></li><li><span class="divider">&gt;</span></li><li class="">Женщинам</li><li><span class="divider">&gt;</span></li><li class="active">Ветровки</li></ul></div>
 <div id="left">
     <div class="accordion">
         <div class="accordion-group category-top">
