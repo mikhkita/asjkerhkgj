@@ -226,6 +226,7 @@ form .column {
 	display: block !important;
 }
 #left.show-f{
+	margin-top: 0;
 	opacity: 1;
     visibility: visible;
     height: 100%;
@@ -446,4 +447,10 @@ input {
 }
 div.accordion-inner ul li a{
 	padding: 0px 0 2px 15px;
+}
+#chain-hint{
+    margin-left: 0!important;
+}
+.wrap-header h1{
+    margin-left: 0!important;
 }

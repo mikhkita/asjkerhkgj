@@ -165,7 +165,7 @@ input.error,textarea.error{
 	margin-bottom: 0;
 }
 #left{
-	margin-top: 40px;
+	margin-top: -70px;
 	min-width: 190px;
 }
 	#left .accordion-heading a{
@@ -209,4 +209,19 @@ input.error,textarea.error{
 }
 .card-new{
 	background-size: cover;
+}
+#chain-hint{
+    margin-left: 213px;
+}
+.wrap-header h1{
+    margin-left: 213px;
+}
+.choice-issuance label{
+	font-size: 12px;
+}
+.bootstrap-select.btn-group .btn .filter-option{
+	font-size: 12px;
+}
+.product-count-bottom span{
+	font-size: 12px;
 }

@@ -318,3 +318,12 @@ input {
 .btn-group{
 	z-index: 10;
 }
+#left{
+    min-width: 180px;
+}
+#chain-hint{
+    margin-left: 201px!important;
+}
+.wrap-header h1{
+    margin-left: 201px!important;
+}
