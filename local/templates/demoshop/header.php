@@ -452,6 +452,7 @@ if ($detailCardView == 2) {
                                 Показать фильтр
                             </a>
                             <div id="workarea">
+                                <?if($currentUri != "/"): ?>
                                  <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
                                 <?$APPLICATION->SetPageProperty("title");?>
                                 <div id="chain-hint">
@@ -467,4 +468,5 @@ if ($detailCardView == 2) {
                                         false
                                     );?>
                                 </div>
+                                <?endif;?>
                                 
