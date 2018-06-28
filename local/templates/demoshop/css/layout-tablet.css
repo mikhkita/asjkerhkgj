@@ -48,9 +48,6 @@ ul#menu-top {
 .row {
 	display: inline-block;
 }
-.breadcrumb{
-	margin-top: 12px;
-}
 .feedback__input_small{
 	width: calc(100% - 32px) !important;
 	
@@ -320,10 +317,4 @@ input {
 }
 #left{
     min-width: 180px;
-}
-#chain-hint{
-    margin-left: 201px!important;
-}
-.wrap-header h1{
-    margin-left: 201px!important;
 }

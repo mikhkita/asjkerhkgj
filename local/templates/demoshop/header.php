@@ -452,5 +452,19 @@ if ($detailCardView == 2) {
                                 Показать фильтр
                             </a>
                             <div id="workarea">
-
+                                 <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
+                                <?$APPLICATION->SetPageProperty("title");?>
+                                <div id="chain-hint">
+                                    <?php
+                                    $APPLICATION->IncludeComponent(
+                                        "bitrix:breadcrumb", 
+                                        "djekit", 
+                                        array(
+                                            "START_FROM" => "0",
+                                            "PATH" => "",
+                                            "SITE_ID" => "s1"
+                                        ),
+                                        false
+                                    );?>
+                                </div>
                                 

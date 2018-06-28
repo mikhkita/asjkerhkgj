@@ -7,23 +7,8 @@ IncludeTemplateLangFile(__FILE__); $VERSION_MODULE = NovaGroupGetVersionModule()
 //pre($arResult['ELEMENT']);
 //pre($arResult['SCALE']);
 
-if (count($arResult['SUBSECTIONS']) > 0) {
-    ?>
-    <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
-    <?
-    $APPLICATION->SetPageProperty("title"); 
-    ?>
-    <div id="chain-hint"><?php
-    $APPLICATION->IncludeComponent(
-        "bitrix:breadcrumb", 
-        "djekit", 
-        array(
-            "START_FROM" => "0",
-            "PATH" => "",
-            "SITE_ID" => "s1"
-        ),
-        false
-    );?></div>
+if (count($arResult['SUBSECTIONS']) > 0) {?>
+   
     
 <!-- <h1 style="font-size: 24px; padding: 10px 0px;">Женские ветровки</h1>
 
@@ -67,9 +52,7 @@ if (count($arResult['SUBSECTIONS']) > 0) {
             </div>
         </div>
     </div>
-    <?
-}
-?>
+<?}?>
 <div id="accordion1" class="accordion">
 
 	<div class="accordion-group">
