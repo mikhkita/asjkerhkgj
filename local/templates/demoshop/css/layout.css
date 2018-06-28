@@ -218,6 +218,6 @@ input.error,textarea.error{
 .product-count-bottom span{
 	font-size: 12px;
 }
-.breadcrumb a{
+.breadcrumb a,.breadcrumb li{
 	font-size: 12px;
 }
