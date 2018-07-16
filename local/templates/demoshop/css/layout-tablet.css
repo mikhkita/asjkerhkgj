@@ -22,7 +22,9 @@ body{
 ul#menu-top {
 	display: none;
 }
-
+.feedback{
+	left: 0px !important;
+}
 #accordion {
 	/*display: none !important;*/
 	/*margin-top: 12px;*/
@@ -53,27 +55,29 @@ ul#menu-top {
 	
 }
 .feedback__input_big {
-	width: calc(100% - 32px);
+	width: calc(100% - 32px) !important;
+	margin-left: 0px !important;
+	padding: 9px 10px !important;
 }
 .feedback {
 	left: 0px;
 	top: 0px;
 }
 .feedback__submit{
-	left: 0;
+	left: 0px !important;
 	margin-bottom: 12px;
 }
 .feedback__name_icon{
-	top: 13px;
-	left: calc(50% - 57px);
+	top: 23px !important;
+	left: calc(50% - 57px) !important;
 }
 .feedback__mail_icon{
-	top: 70px;
-	left: calc(50% - 59px);
+	top: 80px !important;
+	left: calc(50% - 59px) !important;
 }
 .feedback__phone_icon{
-	top: 120px;
-	left: calc(50% - 54px);
+	top: 130px !important;
+	left: calc(50% - 54px) !important;
 }
 form .column {
 	width: calc(50% - 12px);
@@ -246,7 +250,7 @@ div.accordion-inner ul li a.enabled {
 	margin-top: 5px;
 }
 .b-btn-red {
-	width: 50% !important;
+	width: calc(50% - 24px) !important;
 	height: 42px;
 	font-size: 14px !important;
 }

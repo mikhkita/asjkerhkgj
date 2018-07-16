@@ -23,6 +23,27 @@ input.error,textarea.error{
     text-align: center;
 }
 .feedback__submit{
+	left: 578px;
+}
+.feedback__input_big{
+	margin-left: 10px;
+	width: 437px;
+	padding: 9px 6px;
+}
+.feedback__name_icon{
+	top: 14px;
+    left: 267px;
+}
+.feedback__mail_icon{
+	top: 69px;
+    left: 265px;
+}
+.feedback__phone_icon{
+	top: 121px;
+    left: 270px;
+}
+.feedback{
+	left: 0px;
 }
 
 .b-popup{
@@ -220,4 +241,32 @@ input.error,textarea.error{
 }
 .breadcrumb a,.breadcrumb li{
 	font-size: 12px;
+}
+.column:first-child{
+	margin-right: 0px;
+}
+.address{
+	width: 260px;
+}
+.feedback .row {
+	float: right;
+}
+/*input[type="text"]{
+	padding: 1px 10px !important;
+}*/
+.form-demo .submit-btn{
+	background: url(/local/templates/demoshop/images/lupa-demo.svg) no-repeat 0 0;
+    height: 20px;
+    margin: 2px 0 0 3px;
+}
+.slider__button_arrow {
+	position: absolute;
+    right: 16px;
+    top: 15px;
+    width: 9px;
+    height: 10px;
+    background-image: url(/local/templates/demoshop/images/arrow-icon.svg);
+    color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
