@@ -86,6 +86,12 @@ $( document ).ready(function() {
     document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
     });
+       // if ($('.slideout-panel').style('display', 'none')) {
+       //  $('.slideout-panel').style('display', 'block');
+       //  $('.slideout-panel').style('visibility', '');
+
+       // } 
+
 
   // var filter = $('#left').html(),
   //     mfilter = $('.mobile-filter').html();
