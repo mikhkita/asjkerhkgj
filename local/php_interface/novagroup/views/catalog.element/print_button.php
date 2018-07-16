@@ -1,4 +1,4 @@
-<div class="tooltip-demo card-tool" style="right: 32px">
+<div class="tooltip-demo card-tool">
     <div class="bs-docs-tooltip-examples admin">
         <a target="_blank" data-placement="top" rel="tooltip"
            data-original-title="Печать"
