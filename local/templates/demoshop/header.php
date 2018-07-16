@@ -269,8 +269,9 @@ if ($detailCardView == 2) {
             "USE_EXT" => "N",
         )
     );?>
-
-<main id="panel">
+<?if (!$_GET['print'] == 'Y') {
+   ?><main id="panel"><?
+} ?>
     <header>
 <div id="not-old-browser">
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>

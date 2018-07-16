@@ -449,3 +449,6 @@ input {
 div.accordion-inner ul li a{
 	padding: 0px 0 2px 15px;
 }
+.bootstrap-select.btn-group .btn .filter-option{
+	font-size: 14px!important;
+}

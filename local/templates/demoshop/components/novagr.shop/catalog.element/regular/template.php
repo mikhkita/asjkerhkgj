@@ -348,10 +348,10 @@ if (!empty($arResult['ELEMENT']["ID"])) {
 
         <div class="clear"></div>
         <?
-        if($_REQUEST['CAJAX']!=="1")
-		{
-            Novagroup_Classes_General_Main::getView('catalog.element','yashare',array("arResult"=>$arResult, "val"=>$val));
-        }
+ 		//if($_REQUEST['CAJAX']!=="1")
+		//{
+	    //	Novagroup_Classes_General_Main::getView('catalog.element','yashare',array("arResult"=>$arResult, "val"=>$val));
+	    //}
         ?>
 
 		</div>   
