@@ -49,20 +49,19 @@ form .column {
 	width: 100%;
 }
 .feedback__name_icon{
-	top: 25px;
-	right: 24px;
-	left: auto;
-
+	top: 25px !important;
+	right: 24px !important;
+	left: auto !important;
 }
 .feedback__mail_icon{
-	top: 82px;
-	right: 24px;
-	left: auto;
+	top: 82px !important;
+	right: 24px !important;
+	left: auto !important;
 }
 .feedback__phone_icon{
-	top: 132px;
-	right: 24px;
-	left: auto;
+	top: 132px !important;
+	right: 24px !important;
+	left: auto !important;
 }
 .col-right {
 	float: left;
