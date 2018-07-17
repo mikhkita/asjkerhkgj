@@ -285,3 +285,8 @@ input.error,textarea.error{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.carusel-my02{
+	position: relative;
+	top: -20px;
+}
+}

@@ -451,10 +451,8 @@ if ($detailCardView == 2) {
                             </div>
                             <a href="#" class="filter-hide" id="filter-hider">
                                 Показать фильтр
-                            </a>
-                            <div id="workarea">
-                                <?if($currentUri != "/"): ?>
-                                 <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
+                            </a> 
+                            <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
                                 <?$APPLICATION->SetPageProperty("title");?>
                                 <div id="chain-hint">
                                     <?php
@@ -469,5 +467,8 @@ if ($detailCardView == 2) {
                                         false
                                     );?>
                                 </div>
+                            <div id="workarea">
+                                <?if($currentUri != "/"): ?>
+                                
                                 <?endif;?>
                                 

@@ -2,13 +2,13 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Dжекиt");
 $APPLICATION->SetPageProperty("description", "Интернет-каталог одежды для мужчин и женщин Dжекиt");
-$APPLICATION->SetTitle("Dжекиt");
+// $APPLICATION->SetTitle("Dжекиt");
 ?>
-<a href="/catalog/muzhchinam/" class="main-man">
+<a href="/catalog/muzhchinam_kurtki_demisezonnye/" class="main-man">
 	<p class="mobile-but">Мужчинам</p>
 </a>
 
-<a href="/catalog/zhenshchinam/" class="main-woman">
+<a href="/catalog/zhenshchinam_kurtki_demisezonnye/" class="main-woman">
 	<p class="mobile-but">Женщинам</p>
 </a>
 
