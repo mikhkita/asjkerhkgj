@@ -451,3 +451,16 @@ div.accordion-inner ul li a{
 .bootstrap-select.btn-group .btn .filter-option{
 	font-size: 14px!important;
 }
+.product-count-bottom span{
+	font-size: 14px !important;
+}
+.breadcrumb a, .breadcrumb li{
+	font-size: 14px !important;
+}
+.bootstrap-select.btn-group .btn .filter-option {
+    margin-top: 2px !important;
+    top: 0px !important;
+}
+.btn .caret{
+	margin-top: 11px !important;
+}

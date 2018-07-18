@@ -4,6 +4,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $PATH_INCLUDE = SITE_DIR . "include";
 
 $currentUri = $APPLICATION->GetCurPage();
+$GLOBALS["version"] = 2;
 
 // single-column template
 global $oneColumnFlag;
@@ -96,11 +97,11 @@ IncludeTemplateLangFile(__FILE__);
 
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/mask.js");
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.validate.min.js");
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/KitSend.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/KitSend.js?".$GLOBALS["version"]);
     $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-ui.min.js");
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slick.js");
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slideout.js");
-    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slick.js?".$GLOBALS["version"]);
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/slideout.js?".$GLOBALS["version"]);
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js?".$GLOBALS["version"]);
 
 /*
 if (!isMobile())
@@ -189,9 +190,9 @@ if ($detailCardView == 2) {
 */
 ?>
     <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
-    <link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1152px)" href="<?=SITE_TEMPLATE_PATH?>/css/layout-tablet.css">
-    <link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="<?=SITE_TEMPLATE_PATH?>/css/layout-mobile.css">
-    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/layout.css">
+    <link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 1152px)" href="<?=SITE_TEMPLATE_PATH?>/css/layout-tablet.css?<?=$GLOBALS["version"]?>">
+    <link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="<?=SITE_TEMPLATE_PATH?>/css/layout-mobile.css?<?=$GLOBALS["version"]?>">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/layout.css?<?=$GLOBALS["version"]?>">
 
     <link rel="apple-touch-icon" sizes="57x57" href="<?=SITE_TEMPLATE_PATH?>/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="<?=SITE_TEMPLATE_PATH?>/images/apple-icon-60x60.png">
@@ -445,13 +446,6 @@ if ($detailCardView == 2) {
                         <div>
                             <?}?>
                             <!--  content  -->
-                            
-                            <div class="mobile-filter">
-                                
-                            </div>
-                            <a href="#" class="filter-hide" id="filter-hider">
-                                Показать фильтр
-                            </a> 
                             <h1 style="font-size: 24px; padding: 10px 0px;"><?$APPLICATION->ShowTitle(false)?></h1>
                                 <?$APPLICATION->SetPageProperty("title");?>
                                 <div id="chain-hint">
@@ -467,6 +461,12 @@ if ($detailCardView == 2) {
                                         false
                                     );?>
                                 </div>
+                                <div class="mobile-filter">
+                                
+                            </div>
+                            <a href="#" class="filter-hide" id="filter-hider">
+                                Показать фильтр
+                            </a> 
                             <div id="workarea">
                                 <?if($currentUri != "/"): ?>
                                 

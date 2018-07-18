@@ -289,4 +289,25 @@ input.error,textarea.error{
 	position: relative;
 	top: -20px;
 }
+.dropdown-menu a {
+    padding: 0 12px 0 10px;
+}
+.filter-option{
+	font-family: Tahoma,Arial,sans-serif, Geneva, Kalimati;
+}
+.bootstrap-select.btn-group .btn .filter-option {
+    position: relative;
+    left: 0px;
+    top: -4px;
+    margin-top: 0px;
+}
+.btn .caret{
+	margin-top: 5px;
+}
+.card-tool{
+	right: 0px;
+}
+.dropdown-menu li > a:focus{
+	background-image: none;
+	background-color: #fff;
 }
