@@ -461,13 +461,14 @@ if ($detailCardView == 2) {
                                         false
                                     );?>
                                 </div>
+                            
+                            <div id="workarea">
                                 <div class="mobile-filter">
                                 
                             </div>
                             <a href="#" class="filter-hide" id="filter-hider">
                                 Показать фильтр
                             </a> 
-                            <div id="workarea">
                                 <?if($currentUri != "/"): ?>
                                 
                                 <?endif;?>
