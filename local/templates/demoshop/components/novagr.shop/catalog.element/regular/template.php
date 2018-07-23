@@ -233,8 +233,8 @@ if (!empty($arResult['ELEMENT']["ID"])) {
                         ),
                         "img"=>array(
                             "src"=>(!empty($arResult['PREVIEW_PICTURE'][$color])) ? $arResult['PREVIEW_PICTURE'][$color] : "/local/templates/demoshop/images/not-f.jpg",
-                            "width"=>"78",
-                            "height"=>"42",
+                            "width"=>"88",
+                            "height"=>"auto",
                             "position"=>"absolute",
                             "top"=> "0",
                             "left"=> "0",
@@ -243,18 +243,18 @@ if (!empty($arResult['ELEMENT']["ID"])) {
                         )
                     );
                 }
-                
-                $i=0;
+                foreach($arResult['OFFERS'] as $key=> $value){
+                    if (!$offers[$value["PROPERTY_COLOR_ID"]]) {
+                        $offers[$value["PROPERTY_COLOR_ID"]] = CFile::GetPath($value["DETAIL_PICTURE"]);
+                    }
+                }
+
+                $i = 0;
             	foreach ($arColors['COLORS'] as $key => $value) {
-            		if ($i > 0) {
-            			$params[$i-1]["img"]["src"] = $arResult['DETAIL_IMAGES'][$key]["curPhotosSmall"][0];
-            		}
-            		else{
-            			$j = count($params) - 1;
-            			$params[$j]["img"]["src"] = $arResult['DETAIL_IMAGES'][$key]["curPhotosSmall"][0];
-            		}
-            		$i++;
+                    $params[$i]["img"]["src"] = $offers[$params[$i]['button']['data-color']];
+                    $i++;
             	}
+
                 Novagroup_Classes_General_Main::getView('catalog.element','colors_button', array("params"=>$params) );
             }
 

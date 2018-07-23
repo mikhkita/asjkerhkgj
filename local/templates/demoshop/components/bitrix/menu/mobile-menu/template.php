@@ -4,7 +4,8 @@
 	<h2 class="menu-header">Меню</h2>
 	 <ul class="menu-wrap">   
 	 	<li><a href="/"><h3>Главная</h3></a></li>
-        <li><a href="<?=$arResult[0]['LINK']?>"><h3><?=$arResult[0]['TEXT']?></h3></a></li>
+	 	<?$first_item = array_shift($arResult);?>
+        <li><a href="<?=$first_item['LINK']?>"><h3><?=$first_item['TEXT']?></h3></a></li>
 		<li>
 			<?foreach($arResult['MENU'] as $arItem): ?>
 				<?if($arItem['CHILDS']):?>
@@ -23,6 +24,8 @@
 				<?endif;?>
             <?endforeach;?>
 		</li>
-		<li><a href="<?=$arResult[1]['LINK']?>"><h3><?=$arResult[1]['TEXT']?></h3></a></li>
+		<?for($arCount = 0; $arCount < count($arResult) - 1; $arCount++):?>
+			<li><a href="<?=$arResult[$arCount]['LINK']?>"><h3><?=$arResult[$arCount]['TEXT']?></h3></a></li>
+		<?endfor;?>
 	</ul>	
 </nav>
