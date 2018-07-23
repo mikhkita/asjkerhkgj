@@ -83,9 +83,19 @@ input.error,textarea.error{
 }
 .main-man {
 	display: none;
+	min-width: 100%;
+	min-height: 220px;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin-top: -10px;
 }
 .main-woman {
 	display: none;
+	min-width: 100%;
+	min-height: 220px;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin-top: 12px;
 }
 .mobile-but {
 	display: none;

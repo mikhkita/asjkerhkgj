@@ -80,21 +80,9 @@ form .column {
 }
 .main-man {
 	display: block !important;
-	min-width: 100%;
-	min-height: 220px;
-	background-image: url(../images/main-man.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	margin-top: -10px;
 }
 .main-woman {
 	display: block !important;
-	min-width: 100%;
-	min-height: 220px;
-	background-image: url(../images/main-woman.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
-	margin-top: 12px;
 }
 .carusel-my02 {
 	display: none;
