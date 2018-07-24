@@ -168,6 +168,13 @@ $( document ).ready(function() {
     if (document.getElementById('left')){
         $(" #filter-hider ").addClass("show");
         $(" #accordion1 ").addClass("show");
+        if ($("#accordion1 .accordion:nth-child(2n) a.accordion-toggle").hasClass("collapsed")) {
+            $("#accordion1 .accordion:nth-child(2n) a.accordion-toggle").removeClass("collapsed");
+        }
+        if (!$("#collapse-SPECIAL").hasClass("in")) {
+            $("#collapse-SPECIAL").addClass("in");
+            $("#collapse-SPECIAL").css("style = 'height:auto;' ");
+        }
     }
     $(".accordion:first-child .accordion-body").addClass('in');
 });
